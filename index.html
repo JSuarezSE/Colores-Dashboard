@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Un dashboard</title>
+  <style>
+    .form-control {
+      width: 450px;
+    }
+
+    html {
+      scrollbar-color: white black;
+    }
+
+    .main {
+      color: black;
+    }
+
+    .main-content h1 {
+      color: brown;
+    }
+
+    .navbar {
+      background-color: white;
+      border-color: aqua;
+      border-bottom: 1px solid black;
+    }
+
+    .navbar-brand {
+      color: aqua;
+
+    }
+
+    .sidebar {
+      background-color: white;
+      color: black;
+      border-right: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid position-relative">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">SSJE</a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <form class="d-flex position-absolute top-0 start-50 translate-middle-x">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-primary  btn-cambio" type="submit"><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class=" btn-cambio btn btn-primary me-md-2" type="button">ola</button>
+        <button class="btn btn-primary btn-cambio" type="button">ola2</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row vh-100">
+      <div class="col-6 col-md-2 pt-3 sidebar">
+        <div class="">El side bar</div>
+      </div>
+      <div class="col p-4 main">
+        <div class="main-content">
+          <h1>Aqui el contenido</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, neque voluptatum magnam ducimus eos rem
+            qui libero pariatur aspernatur ut repellat ipsa laudantium quos molestiae fuga amet in asperiores
+            laboriosam.</p>
+        </div>
+        <h2>Cambia los colores:</h2>
+        <div class="row">
+          <div class="col">
+            <label for="exampleColorInput" class="form-label">Navbar background</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#4f4040"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioNav">Cambiar</button>
+            </div>
+          </div>
+          <div class="col">
+            <label for="exampleColorInput1" class="form-label mt-2">Navbar color de letra</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput1" value="#FFFFFF"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioLetra">Cambiar</button>
+            </div>
+          </div>
+          <div class="col">
+            <label for="exampleColorInput2" class="form-label mt-2">Navbar color de botones</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput2" value="#BBA1E2"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioBtnNav">Cambiar</button>
+            </div>
+          </div>
+          <div class="col">
+            <label for="exampleColorInput2" class="form-label mt-2">Navbar color de borde</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput3" value="#999999"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioBordeNav">Cambiar</button>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="exampleColorInput" class="form-label">Sidebar background</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput4" value="#f5f5f5"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioSide">Cambiar</button>
+            </div>
+          </div>
+          <div class="col">
+            <label for="exampleColorInput1" class="form-label mt-2">Sidebar color de letra</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput5" value="#000000"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioLetraSide">Cambiar</button>
+            </div>
+          </div>
+          <div class="col">
+            <label for="exampleColorInput2" class="form-label mt-2">Sidebar color de borde</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput6" value="#999999"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioBordeSide">Cambiar</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="exampleColorInput" class="form-label">Contenido background</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput7" value="#f5f5f5"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioContent">Cambiar</button>
+            </div>
+          </div>
+          <div class="col">
+            <label for="exampleColorInput1" class="form-label mt-2">Contenido color de titulo</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput8" value="#563d7c"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioContentTit">Cambiar</button>
+            </div>
+          </div>
+          <div class="col">
+            <label for="exampleColorInput2" class="form-label mt-2">Contenido color de parrafo</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput9" value="#000000"
+                title="Escoge tu color"><button class="btn btn-primary" data-action="cambioContentP">Cambiar</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="exampleColorInput" class="form-label">Color Scroll</label>
+            <div class="d-grid gap-2 d-md-flex ">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput10" value="#f5f5f5"
+                title="Color rueda">
+              <input type="color" class="form-control form-control-color" id="exampleColorInput11" value="#563d7c"
+                title="Color background"> <button class="btn btn-primary" data-action="cambioScroll">Cambiar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e77ad23da.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
